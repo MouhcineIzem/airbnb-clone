@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './header.css';
 import SearchIcon from '@material-ui/icons/Search';
 import LanguageIcon from '@material-ui/icons/Language';
@@ -9,10 +10,13 @@ import Avatar from '@material-ui/core/Avatar';
 function Header() {
     return (
         <div className="header">
-            <img className="header__icon"
-                 src="https://cdn.1min30.com/wp-content/uploads/2018/02/Couleur-logo-Airbnb.jpg"
-                 alt="" 
-            />
+            <Link to="/">
+                <img className="header__icon"
+                src="https://cdn.1min30.com/wp-content/uploads/2018/02/Couleur-logo-Airbnb.jpg"
+                alt="" 
+                />
+            </Link>
+            
             <div className="header__center">
                 <input type="text"/>
                 <SearchIcon />
